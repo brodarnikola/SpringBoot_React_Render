@@ -106,7 +106,8 @@ public class AuthController {
     } */
 
     private String getAppUrl() {
-        return "http://localhost:3000";
+//        return "http://localhost:3000";
+        return "https://polling-app-client-c7gx230zr-nikola-brodars-projects.vercel.app/";
     }
 
     public void createPasswordResetTokenForUser(User user, String token) {

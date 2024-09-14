@@ -59,7 +59,8 @@ public class RegistrationListener  {
 
         final String recipientAddress = user.getEmail();
         final String subject = "Registration Confirmation";
-        final String confirmationUrl = "http://localhost:3000/signUpConfirm?token=" + token;
+//        final String confirmationUrl = "http://localhost:3000/signUpConfirm?token=" + token;
+        final String confirmationUrl = "https://polling-app-client-c7gx230zr-nikola-brodars-projects.vercel.app/signUpConfirm?token=" + token;
         final SimpleMailMessage email = new SimpleMailMessage();
         email.setTo(recipientAddress);
         email.setSubject(subject);
