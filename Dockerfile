@@ -68,5 +68,5 @@ RUN mvn clean package -DskipTests
 #
 FROM openjdk:17-jdk-slim
 COPY --from=build /target/polls-0.0.1-SNAPSHOT.jar polls.jar
-EXPOSE 5000
+EXPOSE 10000
 ENTRYPOINT ["java","-jar","polls.jar"]
