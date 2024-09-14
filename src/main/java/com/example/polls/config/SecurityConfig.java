@@ -165,8 +165,10 @@ public class SecurityConfig {
 //                                .requestMatchers("/", "/favicon.ico", "/**/*.png", "/**/*.gif", "/**/*.svg", "/**/*.jpg", "/**/*.html", "/**/*.css", "/**/*.js").permitAll()
                                         .requestMatchers("/").permitAll()
 
-                                        .requestMatchers("/api/auth/**").permitAll()
-
+//                                        .requestMatchers("/api/auth/**").permitAll()
+                                        .requestMatchers("/api/auth/forgotPassword", "/api/auth/changePassword", "/api/auth/user/savePassword",
+                                                "/api/auth/signin", "/api/auth/signup", "/api/auth/signUpConfirm")
+                                        .permitAll()
                                         .requestMatchers("/oauth2/**").permitAll()
 
                                         .requestMatchers("/api/user/checkUsernameAvailability", "/api/user/checkEmailAvailability").permitAll()

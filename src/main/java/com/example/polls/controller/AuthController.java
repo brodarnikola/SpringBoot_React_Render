@@ -236,7 +236,7 @@ public class AuthController {
                 .fromCurrentContextPath().path("/users/{username}")
                 .buildAndExpand(result.getUsername()).toUri();
 
-//        registrationListener.confirmRegistration(user.getEmail(), user.getUsername());
+         registrationListener.confirmRegistration(user.getEmail(), user.getUsername());
 
         return ResponseEntity.created(location).body(new ApiResponse(true, "User registered successfully"));
     }
