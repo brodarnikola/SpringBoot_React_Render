@@ -1,3 +1,5 @@
+Backend deployed on render and frontend deployed on vercel .. Link for frontend, to try it out https://polling-app-client-c7gx230zr-nikola-brodars-projects.vercel.app/
+
 First I would like to thank, Rajeev Kumar Singh. He created amazing tutorial with SpringBoot and React. I have extended this project and added few more functionaleties to this projects. You just need to setup your own properties in mysql database and download node modules. On this link you can find which all node modules you need to download. ht…
 
 ## Building a Full Stack Polls app similar to twitter polls with Spring Boot, Spring Security, JWT, React and Ant Design
