@@ -177,6 +177,7 @@ public class AuthController {
         //        messages.getMessage("message.resetPasswordSuc", null, locale));
     }
 
+
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
